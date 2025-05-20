@@ -1,0 +1,133 @@
+/* .contactsection {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fafafa;
+}
+
+.sectiontag {
+  color: #f8a600;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contactsection h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+}
+
+.contactcards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contactcard {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.contactcard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.contactcard i {
+  font-size: 24px;
+  color: #f8a600;
+  margin-bottom: 10px;
+}
+
+.contactcard h3 {
+  margin: 10px 0 8px;
+  color: #333;
+}
+
+.contactcard p {
+  margin: 4px 0;
+  color: #666;
+}
+ */
+
+.contactsection {
+  max-width: 500px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #171718;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contactsection h2 {
+  text-align: center;
+  color: #ef9826;
+  margin-bottom: 1.5rem;
+}
+
+.contactform {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactform input,
+.contactform textarea {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.contactform textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contactform button {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  background-color: #de8f1a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contactform button:hover {
+  background-color: #e19429;
+}
+
+.contactform button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+
+
+.response-message {
+  margin-top: 1rem;
+  font-weight: 500; 
+  text-align: center;
+}
+
+.response-message.success {
+  color: green;
+}
+
+.response-message.error {
+  color: rgb(223, 127, 30);
+}
+
