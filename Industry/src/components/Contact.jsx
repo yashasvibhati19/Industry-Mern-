@@ -34,7 +34,6 @@ const Contact = () => {
       const res = await axios.post(
         "http://localhost:3000/user/contact",
         formData
-
       );
 
       if (res.status === 200) {

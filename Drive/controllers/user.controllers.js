@@ -49,7 +49,62 @@ const handleContact = async (req, res) => {
 }
 
 
+//get /user/contacts
+const getAllContacts = async (req, res) => {
+  try {
+    const contacts = await Contact.find().sort({ createdAt: -1 });
+
+    return res.status(200).json({
+      success: true,
+      contacts,
+    });
+  } catch (error) {
+    console.error("Failed to fetch contact messages:", error.message);
+    return res.status(500).json({
+      success: false,
+      message: "Unable to fetch contact messages at the moment."
+    });
+  }
+};
+
+
+
+//put /user/contact
+
+const updateContact = async (req, res) => {
+  const { id } = req.params;
+  const { name, email, message, status } = req.body;
+
+  try {
+    const updatedContact = await Contact.findByIdAndUpdate(
+      id,
+      { name, email, message, status },
+      { new: true, runValidators: true }
+    );
+
+    if (!updatedContact) {
+      return res.status(404).json({
+        success: false,
+        message: "No contact entry found with the given ID."
+      });
+    }
+
+    return res.status(200).json({
+      success: true,
+      message: "Contact entry updated successfully.",
+      contact: updatedContact,
+    });
+  } 
+  catch (error) {
+    console.error("Failed to update contact:", error.message);
+    return res.status(500).json({
+      success: false,
+      message: "Update failed due to a server error."
+    });
+  }
+};
+
 
  
 
-module.exports = {handleContact};
+module.exports = {handleContact, getAllContacts, updateContact};

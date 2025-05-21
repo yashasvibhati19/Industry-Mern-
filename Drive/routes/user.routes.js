@@ -5,17 +5,27 @@ const userModel = require('../models/user.model')
 const bcrypt = require('bcrypt');
 const jwt  = require('jsonwebtoken');
 // const user = require('../models/user.model');
-const { handleContact } = require('../controllers/user.controllers');
+// const { handleContact } = require('../controllers/user.controllers');
 
 
-// /user/test
+
+const {
+  handleContact,
+  getAllContacts,
+  updateContact, 
+} = require('../controllers/user.controllers');
+
+
+
+
+
 // get method form ko show krayege
-
+//get /user/register
 router.get('/register', (req, res) => {
   res.render('register');
 })
 
-
+//post /user/register
 router.post('/register', 
   body('email').trim().isEmail().isLength({min: 8}),
   body('password').trim().isLength({min: 5}),
@@ -64,7 +74,7 @@ router.post('/register',
 
 
 
-
+//get /user/login
 router.get('/login', (req, res) => {
   res.render('login')
 })
@@ -136,12 +146,20 @@ res.send('Logged in')
   }
 )
 
-
+//get /user/contact :- Show Contact form
 router.get('/contact', (req, res) => {
   res.render('contact');
 })  
 
-//  /user/contact
+//get /user/contacts :- Fetch all contact submissions(See the submitted data)
+router.get('/contacts', getAllContacts);
+
+
+//put /user/contact/:id :- It will update specific contact message
+router.put('/contact/:id', updateContact);
+
+
+//  /user/contact :- Submit contact form
 router.post(
   '/contact',
   body('name').trim().isLength({ min: 3 }).withMessage("Name is required"),

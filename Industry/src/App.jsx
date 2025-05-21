@@ -6,6 +6,9 @@ import Hero from "./components/Hero";
 import CoreValues from "./components/CoreValues";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Products from "./components/Products";
+import Solution from "./components/Solution";
+import News from "./components/News";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -42,6 +45,30 @@ function App() {
             element={
               <>
                 <CoreValues />
+              </>
+            }
+          />
+          <Route
+            path="/products"
+            element={
+              <>
+                <Products />
+              </>
+            }
+          />
+          <Route
+            path="/solution"
+            element={
+              <>
+                <Solution />
+              </>
+            }
+          />
+          <Route
+            path="/news"
+            element={
+              <>
+                <News />
               </>
             }
           />

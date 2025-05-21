@@ -1,0 +1,49 @@
+.newsContainer {
+  padding: 3rem 1.5rem;
+  background-color: #fff;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.newsCard {
+  background-color:  #f7f6f4;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.newsCard:hover {
+  background-color: #ebd4ac;
+}
+
+.newsDate {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.calendarIcon {
+  color: #e7a025;
+  font-size: 1rem;
+}
+
+.newsTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.newsDescription {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}

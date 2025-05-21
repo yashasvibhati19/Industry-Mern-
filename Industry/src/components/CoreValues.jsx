@@ -1,6 +1,6 @@
+import Image from "../assets/image1.png";
 import React, { useRef } from "react";
 import "./CoreValues.css";
-import Image from "../assets/image1.png";
 import { FaSyncAlt, FaUsers, FaRocket } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
 import Slider from "react-slick";

@@ -1,0 +1,51 @@
+.solutionsContainer {
+  padding: 3rem 1.5rem;
+  background: white;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #e7a025;
+}
+
+.solutionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.solutionCard {
+  background-color: #f7f6f4;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.solutionCard:hover {
+  transform: translateY(-5px);
+  background-color: #ebd4ac;
+
+}
+
+.iconWrapper {
+  font-size: 2.5rem;
+  color: #e7a025;
+  margin-bottom: 1rem;
+}
+
+.solutionTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.solutionDesc {
+  font-size: 1rem;
+  color: #555;
+}
+
