@@ -9,12 +9,19 @@ LeadEx is a modern, responsive web application built for the lead manufacturing 
 ![Company](https://github.com/yashasvibhati19/Industry-Mern-/blob/36cd91dd3be10c598322492dcbc0299f4e651eb2/Screenshot%202025-05-21%20165128.png)
 
 Tech Stack:-
-Fontend : React.js
+
+Fontend : React.
+
 Backend : Node.js + Express
+
 Database : MongoDB (Mongoose)
+
 Styling : Custom CSS
+
 Icons : React-Icons Library
+
 Routing : React Router DOM 
+
 Version Control : Git + Github
 
 
