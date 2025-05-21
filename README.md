@@ -6,7 +6,7 @@ LeadEx is a modern, responsive web application built for the lead manufacturing 
 ![Home](https://github.com/yashasvibhati19/Industry-Mern-/blob/d1311e3860e030770b417dba455f3c9dc970abc5/Screenshot%202025-05-21%20165055.png)
 
 
-![Company](https://github.com/yashasvibhati19/Industry-Mern-/blob/36cd91dd3be10c598322492dcbc0299f4e651eb2/Screenshot%202025-05-21%20165128.png)
+![Company](https://github.com/yashasvibhati19/Industry-Mern-/blob/7fd73061cd9b0fc1414951596f44548b7e57d5c2/Screenshot%202025-05-21%20200408.png)
 
 Tech Stack:-
 
