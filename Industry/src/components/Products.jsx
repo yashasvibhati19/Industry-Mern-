@@ -51,15 +51,15 @@ const products = [
 ];
 
 const ProductCard = ({ name, image, desc }) => (
-  <div className="product-card">
-    <img src={image} alt={name} className="product-image" />
-    <h3 className="product-title">{name}</h3>
-    <p className="product-desc">{desc}</p>
+  <div className="productcard">
+    <img src={image} alt={name} className="productimage" />
+    <h3 className="producttitle">{name}</h3>
+    <p className="productdesc">{desc}</p>
   </div>
 );
 
 const Products = () => (
-  <div className="products-container">
+  <div className="productscontainer">
     {products.map((product, index) => (
       <ProductCard
         key={index}
